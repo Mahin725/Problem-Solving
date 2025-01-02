@@ -1,14 +1,6 @@
-facebook google phitron youtube twitter end
-12
-visit phitron
-prev
-prev
-prev
-prev
-next
-visit twitter
-next
-next
-prev
-visit django
-prev
+5
+1 10
+0 10
+1 20
+3 30
+2 30
