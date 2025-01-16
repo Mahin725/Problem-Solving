@@ -1,1 +1,6 @@
-60 50 40 
+A = 20
+GRADE = 4.290000
+bonus = 3333.333330
+name = sahel
+sec= c
+single: 1
