@@ -1,6 +1,1 @@
-A = 20
-GRADE = 4.290000
-bonus = 3333.333330
-name = sahel
-sec= c
-single: 1
+90 40 20 10 30 50 60 
