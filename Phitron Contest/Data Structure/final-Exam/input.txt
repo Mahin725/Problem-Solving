@@ -1,3 +1,13 @@
+4
+10 -10 -5 -20
+10
+1
 2
-ratul piyush fohad shuvo rafi piyush fohad ratul 
-jony jony yes papa eating sugar no papa telling lies no papa open your mouth ha ha ha 
+2
+2
+2
+0 10
+1
+2
+0 20
+1
