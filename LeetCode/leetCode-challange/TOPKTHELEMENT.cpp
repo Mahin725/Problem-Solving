@@ -1,16 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        int sz = nums.size();
-        vector<int>mostFre;
-        vector<int>fre(sz,0);
-        for(int i =0; i<sz;i++){
-            fre[i]++;
+        unordered_map<int, int> freq;  // Step 1: Count frequency
+        for (int num : nums) {
+            freq[num]++;
         }
-        sort(fre.begin(),fre.end());
-        for(int i = 0; i<k; i++){
-            mostFre.push_back(fre[i]);
+
+        // Step 2: Min-Heap to store k most frequent elements
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> minHeap;
+
+        for (auto& [num, count] : freq) {
+            minHeap.push({count, num});
+            if (minHeap.size() > k) {
+                minHeap.pop();  // Remove the least frequent element
+            }
         }
-        return mostFre;
+
+        // Step 3: Extract the elements from the heap
+        vector<int> result;
+        while (!minHeap.empty()) {
+            result.push_back(minHeap.top().second);
+            minHeap.pop();
+        }
+
+        return result;
     }
 };
