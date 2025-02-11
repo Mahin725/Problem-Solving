@@ -20,7 +20,7 @@ class Solution {
             for(int i =0; i<4; i++)
             {
                 int ci = si + d[i].first;
-                int cj = cj + d[i].second;
+                int cj = sj + d[i].second;
                 if(isvaild(ci,cj) && !vis[ci][cj] && grid[ci][cj]==1)
                 {
                     dfs(ci,cj,grid);
