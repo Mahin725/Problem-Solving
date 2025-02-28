@@ -10,7 +10,7 @@ void floyd_warshall(int n)
         {
             for (int j = 1; j <= n; j++)
             {
-                if (dist[i][k] < INT_MAX && dist[k][j] < INT_MAX)
+                if (dist[i][k] < LONG_MAX && dist[k][j] < LONG_MAX)
                 {
                     dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                 }
@@ -32,7 +32,7 @@ int main()
                 dist[i][j] = 0;
             else
             {
-                dist[i][j] = INT_MAX;
+                dist[i][j] = LONG_MAX;
             }
         }
     }
@@ -49,7 +49,7 @@ int main()
     while (q--) {
         long long x, y;
         cin >> x >> y;
-        if (dist[x][y] == INT_MAX) cout << -1 << endl;
+        if (dist[x][y] == LONG_MAX) cout << -1 << endl;
         else cout << dist[x][y] << endl;
     }
     return 0;
