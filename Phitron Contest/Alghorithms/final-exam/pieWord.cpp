@@ -2,7 +2,7 @@
 using namespace std;
 
 void checkPileOfWord(string s1, string s2) {
-    if (s1.length() != s2.length()) {
+    if (s1.length() != s2.length()) {z
         cout << "NO\n";
         return;
     }
