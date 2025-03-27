@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at midnight
+    - cron: '0 0 * * *'  # Runs daily at midnight
 
 jobs:
   update-readme:
@@ -17,7 +17,8 @@ jobs:
       - name: Count problems solved
         run: |
           PROBLEM_COUNT=$(find . -type f \( -name "*.cpp" -o -name "*.c" -o -name "*.py" \) | wc -l)
-          sed -i "s/Total Problem Solved Track in there -> {count}/Total Problem Solved Track in there -> $PROBLEM_COUNT/" README.md
+          echo "Total Problems Solved: $PROBLEM_COUNT"
+          sed -i "s/Total Problems Solved: {count}/Total Problems Solved: $PROBLEM_COUNT/" README.md
 
       - name: Commit and push changes
         run: |
@@ -26,4 +27,3 @@ jobs:
           git add README.md
           git commit -m "Updated problem count in README" || exit 0
           git push
- 
