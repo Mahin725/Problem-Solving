@@ -1,0 +1,29 @@
+name: Update README with Problem Count
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at midnight
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Count problems solved
+        run: |
+          PROBLEM_COUNT=$(find . -type f \( -name "*.cpp" -o -name "*.c" -o -name "*.py" \) | wc -l)
+          sed -i "s/Total Problem Solved Track in there -> {count}/Total Problem Solved Track in there -> $PROBLEM_COUNT/" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Updated problem count in README" || exit 0
+          git push
+ 
