@@ -12,7 +12,7 @@ The problems are solved in various programming languages
   C++
   Python
 ```
-    
+**Total Problems Solved:** {count} 
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out:
