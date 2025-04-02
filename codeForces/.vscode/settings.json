@@ -4,6 +4,9 @@
         "iostream": "cpp",
         "sstream": "cpp",
         "regex": "cpp",
-        "vector": "cpp"
-    }
+        "vector": "cpp",
+        "deque": "cpp",
+        "string": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
