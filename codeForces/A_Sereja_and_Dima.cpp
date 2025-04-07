@@ -1,3 +1,11 @@
+/**
+ * Bismillahhir Rahmanir Rahim
+ * author: Raihanul Islam Sharif
+ * Problem link: https://codeforces.com/contest/381/submission/314372413
+ * platform: codeforese div2 soluations
+ * Date: 07 - 04 - 2025
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
