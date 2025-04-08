@@ -1,3 +1,10 @@
+/**
+ * Bismillahhir Rahmanir Rahim
+ * author: Raihanul Islam Sharif
+ * Problem link: 
+ * platform: 
+ * Date: 08 - 04 - 2025
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
