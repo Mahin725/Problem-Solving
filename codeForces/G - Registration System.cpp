@@ -8,41 +8,37 @@ int main()
 
     int n;
     cin >> n;
-    vector<string> database;
+
+    map<string, int> database;
 
     while (n--)
     {
         string username;
         cin >> username;
 
-        auto it = find(database.begin(), database.end(), username);
-        if (it != database.end())
+        if (database.find(username) == database.end())
         {
-            string base = username;
-            while (!base.empty() && isdigit(base.back()))
-            {
-                base.pop_back();
-            }
-
-            int suffix = 1;
+            database[username] = 1;
+            cout << "OK\n";
+        }
+        else
+        {
             string new_username;
+            int suffix = database[username];
+
             while (true)
             {
-                new_username = base + to_string(suffix);
-                if (find(database.begin(), database.end(), new_username) == database.end())
+                new_username = username + to_string(suffix);
+                if (database.find(new_username) == database.end())
                 {
                     break;
                 }
                 suffix++;
             }
 
-            database.push_back(new_username);
+            database[username] = suffix + 1;     
+            database[new_username] = 1; 
             cout << new_username << "\n";
-        }
-        else
-        {
-            database.push_back(username);
-            cout << "OK\n";
         }
     }
 
