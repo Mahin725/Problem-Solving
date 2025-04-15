@@ -10,29 +10,27 @@ int main()
     {
         int n,q;
         cin>>n>>q;
-        vector<int>a(n+1);
-        for(int i =0; i<n;i++)
-            cin>>a[i];
+        map<int,set<int>>mp;
+        for(int i = 1; i<=n;i++)
+        {
+            int x;cin>>x;
+            mp[x].insert(i);
+        }
         while(q--)
         {
-            bool possible = false;
-            int start,destination;
-            cin>>start>>destination;
-            for(int i =0; i<n;i++)
-            {
-                if(a[i]==start){
-                    for(int j = i; j<n;j++){
-                        if(a[j]==destination){
-                            possible = true;
-                            break;
-                        }
-                    }
-                }
+            int l,r;
+            cin>>l>>r;
+            if((mp.find(l)==mp.end()) || (mp.find(r)==mp.end())){
+                cout<<"NO"<<endl;
+            }else{
+                int leftMostStation,rightMostStation;
+                leftMostStation = *mp[l].begin();
+                rightMostStation = *mp[r].rbegin();
+                if(leftMostStation<rightMostStation)
+                    cout<<"YES\n";
+                else
+                    cout<<"NO\n";
             }
-            if(possible)
-                cout<<"YES\n";
-            else
-                cout<<"NO\n";
         }
     }
     return 0;
