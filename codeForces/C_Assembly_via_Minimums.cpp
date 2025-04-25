@@ -1,11 +1,10 @@
 /**
  * Bismillahhir Rahmanir Rahim
  * author: Raihanul Islam Sharif
- * Problem link: 
+ * Problem : C_Assembly_via_Minimums.cpp
  * platform: 
- * Date: 25 - 04 - 2025
-*/
-
+ * Date: 25
+ */
 #include <bits/stdc++.h>
 using namespace std;
 
