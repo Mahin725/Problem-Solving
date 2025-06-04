@@ -5,7 +5,6 @@
  * platform: 
  * Date: 04 - 06 - 2025
  */
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,10 +25,12 @@ int main()
         for (int i = 0; i < n; ++i) 
             cin >> b[i];
 
-        int max_val = 0;
-        for (int mask = 1; mask < (1 << n); ++mask)
+        int maxVal = 0;
+        int totalMasks = 1 << n;
+
+        for (int mask = 1; mask < totalMasks; ++mask)
         {
-            set<int> vitamins;
+            unordered_set<int> vitamins;
             int cost = 0;
             for (int i = 0; i < n; ++i)
             {
@@ -39,10 +40,12 @@ int main()
                     cost += b[i];
                 }
             }
-            int val = c * (int)vitamins.size() - cost;
-            max_val = max(max_val, val);
+
+            int val = (int)vitamins.size() * c - cost;
+            maxVal = max(maxVal, val);
         }
-        cout << max_val << '\n';
+
+        cout << maxVal << '\n';
     }
 
     return 0;
