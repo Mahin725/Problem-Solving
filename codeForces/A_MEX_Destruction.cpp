@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define int long long
+
+#define ll long long
 
 void raihanSolve()
 {
     int n;
-    cin>>n;
+    cin >> n;
     vector<int> a(n);
     for (int i = 0; i < n; i++)
         cin >> a[i];
