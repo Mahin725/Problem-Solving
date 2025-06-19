@@ -1,34 +1,54 @@
-/**
- * Bismillahhir Rahmanir Rahim
- * author: Raihanul Islam Sharif
- * Problem link: 
- * platform: 
- * Date: 08 - 04 - 2025
-*/
-#include <bits/stdc++.h>
+ #include<bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    int tcase;cin>>tcase;
-    while(tcase--)
+    cin.tie(0);
+    long long tt;
+    cin>>tt;
+    while(tt--)
     {
-        int n,k;
+        long long n,k;
         cin>>n>>k;
-        vector<int>a(n+1);
-        for(int i =0; i<n;i++)
+        long long arr[n+10];
+        long long l=0,r=n;
+        for(int i=1;i<=n;i++)
         {
-            cin>>a[i];
+            cin>>arr[i];
         }
-        set<int>distinc_elements(a.begin(),a.end());
-
-        int mex =0;
-        while(distinc_elements.count(mex)){
-            mex++;
+        long long ans=-1;
+        while(l<=r)
+        {
+            long long mid=(l+r)>>1;
+            long long cnt=0;
+            unordered_set<int>st,cmp;
+            for(int i=0;i<=mid;i++)
+            {
+                cmp.insert(i);
+            }
+            for(int i=1;i<=n;i++)
+            {
+                if(arr[i]<=mid)
+                {
+                   st.insert(arr[i]);
+                }
+                if(st.size()==cmp.size())
+                {
+                    cnt++;
+                    st.clear();
+                }
+            }
+            if(cnt>=k)
+            {
+                ans=mid;
+                l=mid+1;
+            }
+            else
+            {
+                r=mid-1;
+            }
         }
-        cout<<mex<<endl;
-    }   
+        cout<<ans+1<<endl;
+    }
     return 0;
 }
