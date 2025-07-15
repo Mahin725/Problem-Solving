@@ -15,7 +15,8 @@ int main()
         while (true)
         {
             if (x > 3)
-                x -= 3;
+                x -= 3;dfsfsfsdfsdfsdfsdfsdfsdfsd
+                
             else if (x % 2 == 0)
                 x /= 2;
             else
