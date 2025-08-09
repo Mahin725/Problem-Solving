@@ -6,7 +6,12 @@ import "fmt"
 // function
 func Print(n int ){
 	for i := 1; i <= n; i++ {
-		fmt.Print(i," ")
+		if(i==n){
+			fmt.Print(i)
+		}else{
+
+			fmt.Print(i," ")
+		}
 	}
 }
 
