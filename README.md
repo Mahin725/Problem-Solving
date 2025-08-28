@@ -1,22 +1,41 @@
-
 # Problem Solving Repository
 
-Welcome to my problem-solving repository! This repository contains all the coding problems I have solved during various contests as well as problems I have tackled outside of contests. The aim is to keep a record of my solutions and track my progress over time.
+Welcome to my Problem Solving Repository! 🚀  
+This repository contains coding problems solved using **complex data structures and algorithms** from various competitive programming contests and independent practice. It serves as a record of my journey, tracking progress, and showcasing solutions to challenging problems.
+
+## Topics Covered
+
+The problems here involve advanced concepts such as:
+
+- Graph Algorithms (BFS, DFS, Dijkstra, Bellman-Ford, etc.)
+- Dynamic Programming
+- Segment Trees, Fenwick Trees
+- Trees and Binary Search Trees
+- Heaps, Priority Queues
+- Hashing Techniques
+- Advanced Sorting and Searching
+- Mathematical & Number Theory Problems
+
+**Platforms Practiced On:** [CSES, LeetCode, Phitron Contest, AtCoder, Code Ninja 360, CodeChef, Codeforces, GeeksforGeeks, Online Judge]
 
 ## Languages Used
 
-The problems are solved in various programming languages
+Most problems are solved in **C++**, which is my primary language, with occasional use of other languages:
 
-```bash
+```text
   C
-  C++
+  C++ (Primary – Major Problem Solving)
   Python
+  Go
+  JavaScript
 ```
-**Total Problems Solved:** {count} 
-## Contact
+  
+  ## Contact
 
-If you have any questions or suggestions, feel free to reach out:
+  If you have any questions or suggestions, feel free to reach out:
 
-```bash
-  Email: rihanulislam2015@gmail.com
-```
+  ```bash
+   Name: Raihanul Islam Sharif  
+  LinkedIn: [bd.linkedin.com/in/rihanthedev](https://bd.linkedin.com/in/rihanthedev)  
+  Email: [rihanulislam2015@gmail.com](mailto:rihanulislam2015@gmail.com)
+  ```
