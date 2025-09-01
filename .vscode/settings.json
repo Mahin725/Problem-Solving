@@ -11,7 +11,8 @@
     "unordered_set": "cpp",
     "vector": "cpp",
     "initializer_list": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp_Runner.cCompilerPath": "gcc",
