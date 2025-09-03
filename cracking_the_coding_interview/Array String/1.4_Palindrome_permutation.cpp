@@ -1,4 +1,3 @@
-// Author: Raihanul Islam
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,37 +7,26 @@ int main()
     cin.tie(nullptr);
 
     string s = "TactCoa";
-    // cin >> s;
-    // getline(cin, s);
-    sort(s.begin(), s.end());
-    bool mainFlag = false;
-    do
-    {
-        // cout << s << endl;
-        bool flg = true;
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
 
-        for (int i = 0, j = s.size() - 1; i < s.size(); i++, j--)
-        {
-            if (s[i] != s[j])
-            {
-                flg = false;
-            }
-        }
-        if (flg)
-        {
-            mainFlag = true;
-            break;
-        }
-    } while (next_permutation(s.begin(), s.end()));
-    if (mainFlag)
+    unordered_map<char, int> freq;
+    for (char c : s)
     {
+        if (isalpha(c))
+            freq[c]++;
+    }
+
+    int oddCount = 0;
+    for (auto [ch, cnt] : freq)
+    {
+        if (cnt % 2 != 0)
+            oddCount++;
+    }
+
+    if (oddCount <= 1)
         cout << "YES\n";
-    }
     else
-    {
         cout << "NO\n";
-    }
+
     return 0;
 }
-
-// there have an testing issues. i think it should be string input releted issues.
