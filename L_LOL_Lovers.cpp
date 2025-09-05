@@ -11,9 +11,8 @@ int main()
     cin >> n >> s;
 
     for (int k = 1; k < n; k++)
-    {
+    { // prefix length
         int l1 = 0, o1 = 0, l2 = 0, o2 = 0;
-
         for (int i = 0; i < k; i++)
         {
             if (s[i] == 'L')
