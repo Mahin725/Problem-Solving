@@ -13,10 +13,11 @@ using namespace std;
 
 string StringCompression(string str)
 {
-    string result;
+    // beside code line i added time complexity and space complexity
+    string result; // O(1) time complexity and space bigO(n)
     int count = 0;
 
-    for (int i = 0; i < str.size(); i++)
+    for (int i = 0; i < str.size(); i++) // o(n)
     {
         count++;
         if (i + 1 == str.size() || str[i] != str[i + 1])
@@ -50,7 +51,7 @@ int main()
 // okey Problem are solve now we will calcaulete time compelxtity for this problem stametnt.
 
 /**
- *
+ * in this problem overall time complexity are bigO(n);
  *
  *
  */
