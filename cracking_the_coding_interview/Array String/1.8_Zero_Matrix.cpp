@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Zero Matrix Algorithm (CTCI 1.8)
+// Zero Matrix Algorithm implement (CTCI 1.8)
 void WriteAlgoForZero(vector<vector<int>> &matrix)
 {
     int n = matrix.size();
