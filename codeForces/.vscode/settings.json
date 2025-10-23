@@ -92,7 +92,9 @@
     "stop_token": "cpp",
     "syncstream": "cpp",
     "text_encoding": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "stdio.h": "c",
+    "string.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp_Runner.cCompilerPath": "gcc",
