@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Compititive Programming/Problem-Solving/LeetCode",
-      "program": "d:/Compititive Programming/Problem-Solving/LeetCode/build/Debug/outDebug",
+      "cwd": "d:/Compititive Programming/Problem-Solving/LeetCode/weekly contest/449",
+      "program": "d:/Compititive Programming/Problem-Solving/LeetCode/weekly contest/449/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
