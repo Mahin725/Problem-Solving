@@ -47,7 +47,7 @@ public:
     }
     int get(int key) { return getValueByHash(key); }
 
-    void remove(int key) { removemap(key); }
+    void remove(int key) { removemap(key);}
 };
 
 /**
